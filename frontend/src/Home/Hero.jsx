@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from '../Components/NavBar'
 import Main from '../Components/Main'
 import Post from '../Components/Post'
+import Footer from '../Components/Footer'
 
 function Hero() {
     return (
@@ -10,6 +11,7 @@ function Hero() {
             <hr className='bg-black text-black font-bold'></hr>
             <Main></Main>
             <hr className='bg-black text-black font-bold'></hr>
+            <Footer></Footer>
 
         </div>
     )
