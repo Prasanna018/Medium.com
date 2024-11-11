@@ -8,7 +8,7 @@ function NavBar() {
             <div className='flex justify-center items-center'>
                 <span className='flex gap-x-4 text-black justify-center items-center'>
                     <div><ImBlogger className='text-4xl text-black' /></div>
-                    <div className=' text-4xl font-extrabold italic'>Medium.com </div>
+                    <Link to={'/'}> <div className=' text-4xl font-extrabold italic'>Medium.com </div></Link>
 
                 </span>
 
