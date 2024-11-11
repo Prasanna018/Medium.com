@@ -8,7 +8,7 @@ export default defineConfig({
     port: 3001,
     proxy: {
       "/api1": {
-        target: "http://localhost:3000",
+        target: "https://medium-com-njo9.onrender.com",
         changeOrigin: true
       }
 
