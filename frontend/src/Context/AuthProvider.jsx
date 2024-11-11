@@ -3,7 +3,7 @@ import Cookies from 'js-cookie'
 export const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
-    const initialUserState = JSON.parse(localStorage.getItem("medium") || Cookies.get("jwt"));
+    const initialUserState = localStorage.getItem("medium") || Cookies.get("jwt");
     const [authUser, setAuthUser] = useState(initialUserState ? JSON.parse(initialUserState) : undefined)
     return (
         <AuthContext.Provider value={[authUser, setAuthUser]}>
