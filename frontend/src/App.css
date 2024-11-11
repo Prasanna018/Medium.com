@@ -1,0 +1,22 @@
+.bg {
+    background-color: #f3f3eb;
+}
+
+.navBg {
+    background-color: #f7f4ed;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #050404;
+    /* old IE */
+    background-color: #000000;
+    /* Modern Browsers */
+}
+
+.bgImage {
+
+    background-image: '/src/assests/andrew-neel-cckf4TsHAuw-unsplash.jpg';
+}
