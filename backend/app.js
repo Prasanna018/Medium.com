@@ -8,7 +8,7 @@ import db from './db_config/db-config.js'
 app.use(express.json())
 
 // app.use(cors())
-app.use(cors({ credentials: true, origin: ['https://medium-com-blog.onrender.com'] }));
+app.use(cors({ credentials: true, origin: ['https://medium-com-blog.onrender.com'], method: ['post', 'get', 'delete', 'put'] }));
 // ROUTERS
 import AuthRoutes from './Routes/AuthRoutes.js'
 import PostsRoutes from './Routes/PostsRoutes.js'
