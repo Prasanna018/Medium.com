@@ -15,7 +15,7 @@ function SIgnup() {
             email: data.email,
             password: data.password
         }
-        await axios.post("/api1/api/auth/signup", userInfo).then((response) => {
+        await axios.post("/api1/api/auth/signup", userInfo, { withCredentials: true }).then((response) => {
             console.log(response.data);
             if (response.data) {
                 alert(response.data.message);

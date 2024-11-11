@@ -12,7 +12,7 @@ function LogIn() {
             email: data.email,
             password: data.password
         }
-        await axios.post("/api1/api/auth/login", userInfo).then((response) => {
+        await axios.post("/api1/api/auth/login", userInfo, { withCredentials: true }).then((response) => {
             console.log(response.data);
             if (response.data) {
                 alert(response.data.message);
