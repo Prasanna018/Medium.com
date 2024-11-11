@@ -19,7 +19,7 @@ function Main() {
 
             </div>
             <div className='w-1/4 ' >
-                <img className='object-cover h-[80vh]' src={'/src/assests/work-4997565_1280 (2).jpg-fotor-bg-remover-20241108122734.png'}></img>
+                <img className='object-cover h-[80vh]' src={'../assests/bg.png'}></img>
 
             </div>
 
