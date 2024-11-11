@@ -24,7 +24,7 @@ export const Signup = async (req, res) => {
         res.cookie("jwt", token, {
             httpOnly: true,
             secure: true,
-            sameSite: "strict"
+            sameSite: "None"
         }).status(200).json({
             user: {
                 username: newUser.username,
@@ -61,7 +61,7 @@ export const Login = async (req, res) => {
     res.cookie("jwt", token, {
         httpOnly: true,
         secure: true,
-        sameSite: "strict"
+        sameSite: "None"
     }).status(200).json({
         message: "Log in successfully",
         user: {
